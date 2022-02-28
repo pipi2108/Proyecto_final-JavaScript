@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Little Natural Things | Productos </title>
+     <!--Font Awesome-->
+     <script src="https://kit.fontawesome.com/15350fe26d.js" crossorigin="anonymous"></script>
+     <!--Boostrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!--ANIMATE.CSS-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!--Custom CSS-->
+     <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    <header>
+        <nav class="nav-main top-header">
+            <img id="logo" src="img/main/logo-principal.png" alt="logo-principal" class="nav-brand" width="180px">
+            <ul class="nav-menu">
+                <li>
+                    <a id="Inicio" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a id="Productos" href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a id="Contacto" href="#">Contacto</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-rigth">
+                <li>
+                    <div>
+                        <button id="carrito" >
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </li>
+                <li id="carro">
+                    <span class="cart__count"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <div class="compraFinal">
+            <div class="capa"></div>
+            <div id="infoCompra" class="infoCompra">
+                <div>
+                    <i id="back" class="fas fa-arrow-left"></i> 
+                    <h1>Tu pedido total:</h1>
+                </div>
+                <div id="compraFinalizada"></div>
+                <label class="label-pagos">Medio de pago:</label>
+                <select id="pagos" class="form-select">
+                    <option value="1">Efectivo</option>
+                    <option value="2">Transferencia</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-lg finalizada">Confirmar Compra</button>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div id="sidebar" class="sidebar">
+            <div id="cont-sidebar"></div>
+            <div id="ConfirmarCompra">
+                <label id="traslado"><input type="checkbox" id="envio" > Incluir Envío ($ 500)</label>
+                <button class="btn btn-primary btn-ConfirmarCompra" type="button">Confirmar Pedido</button>     
+            </div>
+        </div>      
+    </aside> 
+
+    <main>
+        <section id="seccionPrinContact" >
+            <h1>CONTÁCTENOS</h1>
+        </section>
+        
+        <section id="formulario">
+            <div class="form">
+                <div class="contact">
+                    <div class="contact-form">
+                        <form action="" id="form">
+                             <p>
+                                 <input type="text" id="nombre" placeholder="Nombre">
+                             </p>
+                             <p>
+                                <input type="email" id="email" placeholder="Email">
+                            </p>
+                            <p>
+                                <input type="tel" id="celular" placeholder="Teléfono">
+                            </p>
+                            <p>
+                                <input type="text" id="asunto" placeholder="Asunto">
+                            </p>
+                            <p class="block">
+                                <textarea id="consulta" rows="3" placeholder="Consulta"></textarea>
+                            </p>
+                            
+                        </form>
+                        <div class="botonEnviar">
+                            <p class="block">
+                                <button type="submit" id="enviaFormulario">ENVIAR</button>
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <div class="cont-footer row ">
+            <div class="col sec-foo">
+                <div>
+                    <h5>Contacto</h5>
+                </div>
+                <div class="row">   
+                    <div class="col logo-email">
+                        <img src="img/main/mail.png" alt="logo-email" width="40px">
+                    </div>
+                    <div class="col text-email">
+                        <p>pao_moyano96@hotmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col sec-foo">
+                <div>
+                    <h5>Formas de pago</h5>
+                </div>
+                <div class="row logo-pagos">
+                    <div class="col">
+                        <img class="transf" src="img/main/transferencia.png" alt="logo-tranferencia" width="80px">
+                    </div>
+                    <div class="col ">
+                        <img class="efect" src="img/main/efectivo.png" alt="logo-efectivo" width="60px">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col sec-foo">
+                <div>
+                    <h5>Seguirnos en nuestras redes</h5>
+                </div>
+                <div class="row">   
+                    <div class="col logo-instagram">
+                        <img src="img/main/Instagram-Logo-PNG-Free-Download.png" alt="logo-instagram" width="60px" >
+                    </div>
+                    <div class="col text-instagram">
+                        <a href="">/little.natural.things</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--JavaScript-->
+    <script src="JS/botones.js"></script>
+    <script src="JS/clases.js"></script>
+    <script src="JS/variables.js"></script>
+    <script src="JS/main.js"></script>
+    <!--SweetAlert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

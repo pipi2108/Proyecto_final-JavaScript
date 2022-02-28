@@ -1,0 +1,613 @@
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none !important;
+}
+
+/* RESPONSIVE 700PX */
+
+@media screen and (max-width: 700px ) {
+    /* Header */
+    #logo {
+        width: 100px;
+    }
+    .nav-main{
+        width: 100% !important;
+    }
+    .nav-main a{
+        font-size: 20px;
+    }
+    /* Main */
+    /* Carrousel */
+    .sec-carrousel {
+        padding: 0px !important;
+    }
+    /* Sec frase */
+    .div-frase{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .frase h3 {
+        font-size: 15px !important;
+        padding-right: 50px !important;
+    }
+    .logo-frase {
+        width: 30px !important;
+        padding-left: 180px !important;
+    }
+
+    /* Cards de Productos */ 
+    .cards {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto; 
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px;
+        align-items: center !important;
+        visibility: visible;
+        padding: 0px !important
+    }
+    .card{
+        width: 280px;
+    }
+    /* Footer */
+    .cont-footer h5 {
+        font-size: 12px;
+    }
+    .sec-foo {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .logo-email {
+        text-align: right !important;
+        padding: 0px !important;
+    }
+    .text-email p {
+        font-size: 12px !important;
+        padding: 0px !important;
+    }
+    .transf {
+        width: 60px;
+    }
+    .efect {
+        width: 45px;
+    }
+    .logo-instagram {
+        width: 50px !important;
+        text-align: right !important;
+    }
+    .text-instagram a {
+        font-size: 12px !important;
+        padding-right: 30px !important;
+    }
+}
+
+/* RESPONSIVE 1200PX */
+@media screen and (max-width: 1200px){
+    /* Header */
+    .nav-main{
+        width: 100% !important;
+    }
+    .nav-main a{
+        font-size: 20px;
+    }
+    /* Main */
+    /* Cards de Productos */ 
+    .cards {
+        height: auto; 
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px;
+        align-items: center !important;
+        visibility: visible;
+        padding: 0px;
+    }
+    .card{
+        width: 280px;
+    }
+    /* Footer */
+    .cont-footer h5 {
+        font-size: 15px;
+    }
+    .logo-email {
+        text-align: center;
+    }
+    .text-email p {
+        font-size: 15px;
+    }
+    .transf {
+        width: 60px;
+    }
+    .efect {
+        width: 45px;
+    }
+    .logo-instagram {
+        width: 50px;
+    }
+    .text-instagram a {
+        font-size: 16px;
+    }
+    }
+/* FIN DE RESPONSIVE */
+
+/* HEADER */
+.top-header{
+    background-image: url("https://i.ibb.co/fDQnR4t/fondo-header.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.nav-main {
+    width: 100% !important;
+    font-size: 21px !important;
+    display: flex !important;
+    justify-content:space-between !important;
+    align-items: center !important;
+    height: 150px !important;
+    position: fixed ;
+    z-index: 2;
+ 
+}
+
+hr {
+    margin-top: 0px !important;
+}
+
+#logo {
+    margin: 0px 40px;
+}
+
+.nav-main ul {
+    display: flex !important; 
+}
+
+.nav-main ul li {
+    padding: 20px !important;
+}
+
+.nav-menu-rigth button{
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+
+#carrito > i{
+    font-size: 26px;
+    margin-top: 13px;
+    padding-left: 10px;
+    position:relative;
+}
+
+.cart__count {
+    right: 40px;
+    font-size: 30px;
+    color: #fff;
+    z-index: 3;
+    position:relative;
+    margin-left: 10px;
+}
+
+#cont-sidebar{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 500px;
+}
+
+.sidebar {
+    background-color:#F7DD6B;
+    width: 450px;
+    height: 100%;
+    position: fixed;
+    right: -450px;
+    display:none;
+    visibility: visible;
+    top: 90px;
+    z-index: 10;
+    border-radius: 20px 0px 20px 0px;
+}
+
+#sidebar {
+    display: none;
+}
+
+/* INFO DENTRO DE SIDEBAR */
+.list-group {
+    border-radius: 20px;
+}
+
+.list-group-item {
+    width: 100%;
+    height: 100%;
+    background-color: #F7DD6B;
+    border: 1px solid white;
+    color: #fff;
+}
+
+.trash {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.trash > .MasMenos{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.trash >.MasMenos >.fa-minus-square,
+.trash >.MasMenos >.fa-plus-square {
+    width: 12px !important;
+    margin-left: 20px;
+    margin-top: 5px;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.trash > .fa-trash-alt  {
+    font-size: 25px;
+    margin-left: 34px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.trash span{
+   font-size: 1em;
+   margin-top: 5px;
+}
+
+.ms-1{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ms-1 p{
+    margin-top: 13px !important;
+    font-size: 1em;
+}
+
+.list-group-item img{
+    width: 80px;
+    margin-left: 40px;
+}
+
+.list-group-item .ms-1 p{
+    color: #fff !important;
+}
+
+
+#ConfirmarCompra{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #fff;
+}
+
+#ConfirmarCompra button {
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 130px;
+    width: 200px;
+}
+
+#traslado{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* ALERTS */
+.SeewAlert{
+    box-sizing: none !important;
+}
+
+.p-sweetAlert{
+    color: #fff;
+}
+
+/* COMPRA FINALIZADA */
+.compraFinal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.capa {
+    width: 100%;
+    height: 5130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(180, 180, 180, 0.6);
+    z-index: 70;
+}
+
+.infoCompra{
+    width: 800px;
+    height: auto;
+    position: fixed;
+    margin-top: 600px;
+    background: rgb(224, 134, 134);
+    border-radius: 20px;
+    z-index: 100 !important;
+}
+
+.infoCompra >div>.fa-arrow-left {
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.infoCompra >div> h1{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+#compraFinalizada li{
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style:circle;
+}
+
+#compraFinalizada  h4{
+    margin-left: 10px;
+    margin-top: 80px;
+}
+
+#compraFinalizada  h3{
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.label-pagos{
+    margin-left: 20px;
+}
+
+#pagos {
+    margin-top: 5px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.finalizada {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 32%;
+}
+
+/* MAIN*/
+
+/* Sec-Carrousel */
+.sec-carrousel{
+    padding: 120px 160px 10px 160px;
+}
+
+.carrousel img {
+    height: 618px;
+}
+
+
+/* Sec-mensaje */
+.sec-frase {
+    background-image: url("https://i.ibb.co/54cC4zf/sec-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 50px 0px;
+    
+}
+
+.logo-frase {
+    text-align: end;
+    padding-right: 80px;
+}
+
+.frase h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding-right: 350px;
+}
+
+/* SECCION PRINCIPAL */
+#seccionPrincipal {
+    padding-top: 200px;
+    background-color: #567766;
+    border-radius: 0px 0px 50px 50px;
+}
+#seccionPrincipal h1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 80px;
+}
+/* CARDS */
+
+.cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto; 
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px;
+    align-items: center !important;
+    visibility: visible;
+    padding: 0px 180px
+}
+
+.cards .card {
+    
+    height: 100% !important;
+    border-radius: 90px;
+}
+
+.cards h5,h6,p {
+    color: #fff !important;
+    margin-left: 10px;
+    margin-top: 5px !important;
+    text-align: center;
+}
+
+.card-body {
+    background: #53AEE3 !important;
+    border-radius: 0px 0px 90px 90px;
+}
+
+.card-body .card-productos {
+    height: auto !important;
+    text-align: center !important;
+}
+
+.card-body a{
+    width: 50%;
+}
+
+.card-boton{
+    height: auto;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.cont-img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.cont-img img {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 90px 90px 0px 0px;
+}
+
+.msjAgregado{
+    margin-bottom: 10px;
+    height: 20px !important;
+}
+
+.mensaje{
+    color: rgb(245, 245, 245) !important; 
+}
+
+
+/*FORMULARIO*/
+#seccionPrinContact {
+    padding-top: 200px;
+    background-color: #567766;
+    border-radius: 0px 0px 50px 50px;
+}
+
+#seccionPrinContact h1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.contact-form{
+    padding: 0px 60px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    margin: 3px;
+    width: 75%;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.contact-form .botonEnviar button {
+    background: rgb(212, 27, 27);
+    border-radius: 20px;
+    width: 50%;
+    color: rgb(7, 7, 7);
+    padding: 1em;   
+    margin-left: 33px;
+    outline: none;
+}
+
+.contact-form .botonEnviar button:hover,
+.contact-form .botonEnviar button:focus {
+    background: #037c40;
+    color: #fff;
+    transition: background-color 1s ease;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* Footer */
+.cont-footer {
+    background-image: url("https://i.ibb.co/fDQnR4t/fondo-header.png" );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.cont-footer h5 {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.sec-foo {
+    padding: 0px 30px;
+    margin: 0px 50px;
+}
+
+.logo-pagos{
+    text-align: center;
+}
+
+.text-instagram {
+    margin-top: 15px;
+}
+.text-instagram a {
+    font-size: 20px;
+}
+
+.text-email p {
+    font-size: 20px;
+}
+
