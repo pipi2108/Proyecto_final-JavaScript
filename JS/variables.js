@@ -1,5 +1,5 @@
 
-const archivoJson= "/productos.json";
+const archivoJson= "https://www.mockachino.com/b6702d86-0e21-46/productos";
 let productos;
 let productosDelCarrito = [];
 let producto;

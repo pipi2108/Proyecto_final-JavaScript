@@ -9,10 +9,9 @@ async function inicioFuncion(){
 
 // CARGO LOS PRODUCTOS
 async function cargarProductos (){ 
-    await $.getJSON(archivoJson, 
-        function (data, textStatus) {
+    await $.getJSON(archivoJson, function (data, textStatus) {
             if (textStatus==="success"){
-                productos=data;
+                productos=data.productos;
                 for (producto of productos) {
                     
                     $(".cards").append(
